@@ -190,6 +190,7 @@ pd.scatter_matrix(Hcor2, alpha= 0.4, figsize=(7, 7), s=20, marker = '.', edgecol
 plt.show()
 
 Age coeficient
+#ultimately unused
 
 a = GoaliesR
 k1 = a.loc[a.Age>35,:]
@@ -238,5 +239,3 @@ k5['K'] = 5
 frames = [k1, k2, k3, k4, k5]
 DefensemanR = pd.concat(frames)
 #Forward
-
-#ultimately unused
