@@ -33,12 +33,14 @@ For this purpose, we used the univariate attribute selection that selecting the 
 The calculation uses the SelectorKBest class, which determines the number of best attributes in com-bination with suitable statistical test. We have applied this process to two basic types of data for a set of all players and a set of all goalies without a split. 
 
 And the results were:
+
 •	Top 5 goalies attributes: Wt (weight), HT (height), PPSA (power play shots against), GAA (goals against average), SHSA (shorthanded shot against).
 •	Top 5 players attributes: Wt (weight), HT (height), TOI/G (time on ice per game), Shift/G (shifts per game), TOI (time on ice). 
 
 Also, we applied the Sequential Forward Selection to identify the most im-portant attributes. 
 Sequential Feature Selector algorithms are a family of greedy search algorithms. 
 These algorithms add or remove one attribute at the time based on the classifier performance until a variables subset of the desired size is reached. We obtained the following results:
+
 •	Top 16 goalies attributes: GS, OT, GR, MIN, SO, StMIN, StSV%, StGAA, QS, ReMIN, SHSV%, PPSV%, SOW, SOL, SSA and, SGA (the prediction accuracy only 54%, but the best from the all related experiments).
 •	Top 8 players attributes: HT, Wt, TOI/G, A/G, PIM/G, Shifts/G, Diff/G and Bl/G (the prediction accuracy 67%).
 
