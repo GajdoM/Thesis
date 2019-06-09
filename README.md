@@ -90,3 +90,7 @@ Forward	        0.54339
 As we can see from the table, for all three goalie categories, we were less accurate than the total set of all goalies. 
 But in three cases the players were more precision than all the players, and the other three were not the best. 
 Especially in the case of the rookie, we have no very suitable models.
+
+Deployment
+
+After evaluation, we designed and implemented the supporting application using all obtained knowledge and experienced from the previous parts of the analytical process. We aimed to offer simple, understandable user interface with all necessary analytical functions. The first tab presents basic information about the application; the second one contains an overview of all input attributes and their explanations. The next offers a simple visualization of available data and a summarization of the models. The last card provides the salary prediction visualized as a graph comparing the real and predicted value 
