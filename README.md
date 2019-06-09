@@ -1,5 +1,7 @@
 My graduation theses
 
+Department of Cybernetics and Artificial Intelligence, Faculty of Electrical Engineering and Informatics, Technical University of Košice, Letná 9, 042 00 Košice, Slovakia
+
 This work aims to understand and process data about NHL players. 
 With data, we create a prediction model to players salary. 
 The full analytical process will be implemented with the CRISP-DM in Python. 
@@ -93,4 +95,13 @@ Especially in the case of the rookie, we have no very suitable models.
 
 Deployment
 
-After evaluation, we designed and implemented the supporting application using all obtained knowledge and experienced from the previous parts of the analytical process. We aimed to offer simple, understandable user interface with all necessary analytical functions. The first tab presents basic information about the application; the second one contains an overview of all input attributes and their explanations. The next offers a simple visualization of available data and a summarization of the models. The last card provides the salary prediction visualized as a graph comparing the real and predicted value 
+After evaluation, we designed and implemented the supporting application using all obtained knowledge and experienced from the previous parts of the analytical process. We aimed to offer simple, understandable user interface with all necessary analytical functions. The first tab presents basic information about the application; the second one contains an overview of all input attributes and their explanations. The next offers a simple visualization of available data and a summarization of the models. The last card provides the salary prediction visualized as a graph comparing the real and predicted value.
+The final version of the app was evaluated by user acceptance testing. We focused this testing on following factors related to the quality of the web applications : functionality, appearance, performance, error rate and rememberability.  The users were people who are very well versed in the NHL. The results showed that 78.3% of the participants were satisfied with the content of the application; 70% of them praised the graphics. They did not identify any significant errors during the testing scenarios. After one week, the testers improved their results. Finally, they proposed some ideas on how we can improve our app.
+
+App is created in Slovak language.
+
+Conclusion
+
+We aimed to understand and process data about NHL players to predict the player's salary. We used the best model and obtained experiences for creating the supporting application. This application offers the functionalities in a simple, understandable form. We know that the generated models are not perfect, but users can use them as support for their decision in offering / accepting contracts. Based on performed state-of-the-art (Matt Cane - hockey analytics researcher, Cameron Nugent – PhD. student and data scientist, Kevin Peck – honors thesis, Stefan Nordenskjöld and Carl Flogvall – bachelor thesis) we can state that our application is the first one solving this task from a more complex perspective. However, the final model we have created is still not in perfect shape. Meanwhile, he can act as a consultant in offering / accepting contracts. However, this model needs to be constantly improved by adding new in-formation that influences the salary of players.
+
+The work was partially supported by the Slovak Grant Agency of the Ministry of Education and Academy of Science of the Slovak Republic under grant no. 1/0493/16 and The Slovak Research and Development Agency under grant no. APVV-16-0213.
