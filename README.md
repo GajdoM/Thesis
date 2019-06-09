@@ -10,6 +10,12 @@ This model used a support application.
 This application will be created using a combination of R and Python programming languages. 
 The final version of the app will be tested and evaluated user testing.
 
+Business understanding
+
+Our goal was to create multiple models that will predict the salary of NHL players. 
+From these models, we choose the best one with the potential to be deployed into practice in the form of a web application. 
+From the analytical point of view, we aimed at a selection of the most important attributes affecting the players’ salary and based on this selection; we applied the regression algorithms.
+
 Data Preparation
 
 Most of the attributes are of numeric type. 
