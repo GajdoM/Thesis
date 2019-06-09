@@ -188,3 +188,55 @@ plt.show()
 
 pd.scatter_matrix(Hcor2, alpha= 0.4, figsize=(7, 7), s=20, marker = '.', edgecolors = 'blue')
 plt.show()
+
+Age coeficient
+
+a = GoaliesR
+k1 = a.loc[a.Age>35,:]
+k2 = a.loc[((a.Age<=21) | ((a.Age>32) & (a.Age<=34))) | ((((a.Age>23) & (a.Age<=25)) | ((a.Age>28) & (a.Age<=30))) & (a.W<=15)) ,:]
+k3 = a.loc[(((a.Age>21) & (a.Age<=23)) | ((a.Age>30) & (a.Age<=32))) | (((a.Age>25) & (a.Age<=28)) & (a.W<=15)),:]
+k4 = a.loc[(((a.Age>23) & (a.Age<=25)) | ((a.Age>28) & (a.Age<=30))) & (a.W>15),:]
+k5 = a.loc[((a.Age>25) & (a.Age<=28)) & (a.W>15),:]
+k1['K'] = 1
+k2['K'] = 2
+k3['K'] = 3
+k4['K'] = 4
+k5['K'] = 5
+frames = [k1, k2, k3, k4, k5]
+GoaliesR = pd.concat(frames)
+#Goalies
+
+
+
+a = ForwardR
+k1 = a.loc[a.Age>35,:]
+k2 = a.loc[((a.Age<=21) | ((a.Age>32) & (a.Age<=34))) | ((((a.Age>23) & (a.Age<=25)) | ((a.Age>28) & (a.Age<=30))) & (a.Pts<=50)) ,:]
+k3 = a.loc[(((a.Age>21) & (a.Age<=23)) | ((a.Age>30) & (a.Age<=32))) | (((a.Age>25) & (a.Age<=28)) & (a.Pts<=50)),:]
+k4 = a.loc[(((a.Age>23) & (a.Age<=25)) | ((a.Age>28) & (a.Age<=30))) & (a.Pts>50),:]
+k5 = a.loc[((a.Age>25) & (a.Age<=28)) & (a.Pts>50),:]
+k1['K'] = 1
+k2['K'] = 2
+k3['K'] = 3
+k4['K'] = 4
+k5['K'] = 5
+frames = [k1, k2, k3, k4, k5]
+ForwardR = pd.concat(frames)
+#Forward
+
+
+a = DefensemanR
+k1 = a.loc[a.Age>35,:]
+k2 = a.loc[((a.Age<=21) | ((a.Age>32) & (a.Age<=34))) | ((((a.Age>23) & (a.Age<=25)) | ((a.Age>28) & (a.Age<=30))) & (a.Pts<=30)) ,:]
+k3 = a.loc[(((a.Age>21) & (a.Age<=23)) | ((a.Age>30) & (a.Age<=32))) | (((a.Age>25) & (a.Age<=28)) & (a.Pts<=30)),:]
+k4 = a.loc[(((a.Age>23) & (a.Age<=25)) | ((a.Age>28) & (a.Age<=30))) & (a.Pts>30),:]
+k5 = a.loc[((a.Age>25) & (a.Age<=28)) & (a.Pts>30),:]
+k1['K'] = 1
+k2['K'] = 2
+k3['K'] = 3
+k4['K'] = 4
+k5['K'] = 5
+frames = [k1, k2, k3, k4, k5]
+DefensemanR = pd.concat(frames)
+#Forward
+
+#ultimately unused
