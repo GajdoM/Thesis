@@ -98,7 +98,9 @@ Deployment
 After evaluation, we designed and implemented the supporting application using all obtained knowledge and experienced from the previous parts of the analytical process. We aimed to offer simple, understandable user interface with all necessary analytical functions. The first tab presents basic information about the application; the second one contains an overview of all input attributes and their explanations. The next offers a simple visualization of available data and a summarization of the models. The last card provides the salary prediction visualized as a graph comparing the real and predicted value.
 The final version of the app was evaluated by user acceptance testing. We focused this testing on following factors related to the quality of the web applications : functionality, appearance, performance, error rate and rememberability.  The users were people who are very well versed in the NHL. The results showed that 78.3% of the participants were satisfied with the content of the application; 70% of them praised the graphics. They did not identify any significant errors during the testing scenarios. After one week, the testers improved their results. Finally, they proposed some ideas on how we can improve our app.
 
-App is created in Slovak language.
+App is created in Slovak language and will be created in R. 
+App is available online for:
+https://prostats-mg-dp.shinyapps.io/dp_mg_app/
 
 Conclusion
 
