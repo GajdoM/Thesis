@@ -2,11 +2,12 @@ library(shiny)
 library(plotly)
 library(ggplot2)
 
-# Define UI for application that draws a histogram
+# App is created in Slovak Language
 ui <- fluidPage(theme = "mytheme.css",
                 tabsetPanel(
                   tabPanel(
                     title = "Domov",
+                    # Description of App
                     sidebarLayout( position = "right",
                                    sidebarPanel(
                                      span("Dáta sú použité zo stránky"), 
@@ -29,6 +30,7 @@ ui <- fluidPage(theme = "mytheme.css",
                   
                   tabPanel(
                     title = "Atribúty",
+                    #Description of Attributes
                     wellPanel(titlePanel("Kompletná tabuľka štatistík a význam atribútov"),
                     div(strong("Názov štatistiky - Popis štatistiky - v zátvorke pre ktoré dáta platia štatistiky"), style = "color:green"),
                     div("Ak pri štatistiky nie je žiadna zátvorka znamená to, že štatistika sa používa u oboch typoch dát", style = "color:grey"),
@@ -142,6 +144,7 @@ ui <- fluidPage(theme = "mytheme.css",
                   
                   tabPanel(
                     title = "Vizualizácia",
+                    #Basic visualization of data
                     sidebarLayout(position = "right",
                       sidebarPanel(
                         wellPanel(strong("Obrazovka slúži na zobrazenie dát"), style = "background: #627cef; color:white; font-size: 20px"),
@@ -164,6 +167,7 @@ ui <- fluidPage(theme = "mytheme.css",
                   
                   tabPanel(
                     title = "Model",
+                    #Description of models
                     sidebarLayout(position = "right",
                       sidebarPanel(
                         wellPanel(strong("Obrazovka slúži na porovnanie viacerých modelov"), style = "background: #627cef; color:white; font-size: 20px"),
@@ -178,6 +182,7 @@ ui <- fluidPage(theme = "mytheme.css",
                     ),
                   
                   tabPanel(
+                    #Salary calculation in the chart
                     title = "Výpočet",
                     sidebarLayout(position = "right",
                       sidebarPanel(
@@ -200,6 +205,7 @@ ui <- fluidPage(theme = "mytheme.css",
 server <- function(input, output) {
   
   output$plot = renderPlotly({
+    #Graph output in Visualization
     if (input$Data == "Defenseman-Rookie"){
       plot_ly(DefensemanN, 
               x = ~CapHit, 
@@ -266,6 +272,7 @@ server <- function(input, output) {
   })
   
   output$Text = renderUI({
+    #Text output in visualization
     if (input$Data == "Goalies-RFA" || input$Data == "Goalies-UFA" || input$Data == "Goalies-Rookie") {
       HTML(paste("Na grafe vidíme porovnanie platu brankárov (CapHit)",
       "V závislosti od počtu odohraných zápasov (GS)",
@@ -281,6 +288,7 @@ server <- function(input, output) {
   })
   
   output$table = renderDataTable(
+    #Table output in model
     if (input$Model == "Feature Selection") {
       (Feature)
     }
@@ -292,6 +300,7 @@ server <- function(input, output) {
     }, options = list(pageLength = 11))
   
   output$Text2 = renderUI({
+    #Text output in model
     if (input$Model == "Feature Selection") {
       HTML(paste(strong("V tabuľke vidíme 10 najlepšie vyhodnotených atribútov podľa modelu Feature Selection pre tabuľky brankárov(G) a hráčov(P)."),
                  "Tieto atribúty sú usporiadané podľa relevantnosti.",
@@ -318,6 +327,8 @@ server <- function(input, output) {
   })
 
   output$model = renderPlot({
+    #Button 'OK'
+    #Graph output in Salary calculation
     input$OK
     isolate({
       if (input$Meno == ""){
