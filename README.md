@@ -64,16 +64,27 @@ But for all players, it was only about 54%, which is too low.
 Also, we used polynomial regression to calculate the expected salary for all divided tables
 
 Table	    Score
+
 GoaliesN	0.84798	
+
 GoaliesU	0.79729	
+
 GoaliesR	0.84776	
+
 DefensemanN	0.54302	
+
 DefensemanU	0.53995	
+
 DefensemanR	0.92464
+
 ForwardN	0.41503
+
 ForwardU	0.82917
+
 ForwardR	0.71461
+
 Goalies	    0.95469
+
 Forward	    0.54339
 
 As we can see from the table, for all three goalie categories, we were less accurate than the total set of all goalies. 
