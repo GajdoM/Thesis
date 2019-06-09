@@ -110,4 +110,6 @@ Conclusion
 
 We aimed to understand and process data about NHL players to predict the player's salary. We used the best model and obtained experiences for creating the supporting application. This application offers the functionalities in a simple, understandable form. We know that the generated models are not perfect, but users can use them as support for their decision in offering / accepting contracts. Based on performed state-of-the-art (Matt Cane - hockey analytics researcher, Cameron Nugent – PhD. student and data scientist, Kevin Peck – honors thesis, Stefan Nordenskjöld and Carl Flogvall – bachelor thesis) we can state that our application is the first one solving this task from a more complex perspective. However, the final model we have created is still not in perfect shape. Meanwhile, he can act as a consultant in offering / accepting contracts. However, this model needs to be constantly improved by adding new in-formation that influences the salary of players.
 
+Data is used from the page http://www.hockeyabstract.com. 
+
 The work was partially supported by the Slovak Grant Agency of the Ministry of Education and Academy of Science of the Slovak Republic under grant no. 1/0493/16 and The Slovak Research and Development Agency under grant no. APVV-16-0213.
