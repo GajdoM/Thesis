@@ -1,8 +1,10 @@
 My graduation theses
 
-APP: https://prostats-mg-dp.shinyapps.io/dp_mg_app/
-
 Department of Cybernetics and Artificial Intelligence, Faculty of Electrical Engineering and Informatics, Technical University of Košice, Letná 9, 042 00 Košice, Slovakia
+
+APP in Slovak Language: https://prostats-mg-dp.shinyapps.io/dp_mg_app/
+
+The results achieved, together with the final decision support application, are described in an article that was presented to the Data & Knowledge & WIKT 2019 Conference
 
 This work aims to understand and process data about NHL players. 
 With data, we create a prediction model to players salary. 
