@@ -136,3 +136,55 @@ Forward1 = Forward.loc[Forward.CapHit>=1000000,:]
 ForwardN = Forward.loc[Forward.CapHit<1000000,:]
 ForwardU = Forward1.loc[Forward1.Status=='UFA',:]
 ForwardR = Forward1.loc[Forward1.Status=='RFA',:]
+
+Correlation
+
+#goalies 
+#correlation across category
+Gcor = G1617.loc[:, ['Ovrl', 'SV%', 'Supp', 'ReMin', 'HighSV%', 'PP SV%', 'FA', 'SO SV%', 'Cap Hit', 'Ginj']]
+Gcor.corr()
+plt.matshow(Gcor.corr())
+plt.xticks(range(len(Gcor.columns)), Gcor.columns, fontsize=10, color='blue', rotation = 'vertical')
+plt.yticks(range(len(Gcor.columns)), Gcor.columns, fontsize=10, color='blue')
+plt.colorbar()
+plt.show()
+
+pd.scatter_matrix(Gcor, alpha= 0.4, figsize=(7, 7), s=20, marker = '.', edgecolors = 'blue')
+plt.show()
+
+#correlation from one select category
+Gcor2 = G1617.loc[:, ['GP', 'W', 'L', 'SA', 'SV', 'GA', 'SV%']]
+Gcor2.cov()
+plt.matshow(Gcor2.corr())
+plt.xticks(range(len(Gcor2.columns)), Gcor2.columns, fontsize=10, color='blue', rotation = 'vertical')
+plt.yticks(range(len(Gcor2.columns)), Gcor2.columns, fontsize=10, color='blue')
+plt.colorbar()
+plt.show()
+
+pd.scatter_matrix(Gcor2, alpha= 0.4, figsize=(7, 7), s=20, marker = '.', edgecolors = 'blue')
+plt.show()
+
+#players
+#correlation across category
+Hcor = H1617.loc[:, ['Ovrl', 'E+/-', 'Diff', 'sDist', 'ozFOL', 'OTG', 'S.Wrap', 'Misc', 'Maj', 'xGF', '3rd', 'MGL']]
+Hcor.corr()
+plt.matshow(Hcor.corr())
+plt.xticks(range(len(Hcor.columns)), Hcor.columns, fontsize=10, color='blue', rotation = 'vertical')
+plt.yticks(range(len(Hcor.columns)), Hcor.columns, fontsize=10, color='blue')
+plt.colorbar()
+plt.show()
+
+pd.scatter_matrix(Hcor, alpha= 0.4, figsize=(7, 7), s=20, marker = '.', edgecolors = 'blue')
+plt.show()
+
+#correlation from one select category
+Hcor2 = H1617.loc[:, ['dzFOW', 'dzFOL', 'nzFOW', 'nzFOL', 'ozFOW', 'ozFOL', 'iFOW', 'iFOL']]
+Hcor2.corr()
+plt.matshow(Hcor2.corr())
+plt.xticks(range(len(Hcor2.columns)), Hcor2.columns, fontsize=10, color='blue', rotation = 'vertical')
+plt.yticks(range(len(Hcor2.columns)), Hcor2.columns, fontsize=10, color='blue')
+plt.colorbar()
+plt.show()
+
+pd.scatter_matrix(Hcor2, alpha= 0.4, figsize=(7, 7), s=20, marker = '.', edgecolors = 'blue')
+plt.show()
